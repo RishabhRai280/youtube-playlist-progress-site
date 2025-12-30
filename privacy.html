@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - YouTube Playlist Progress Tracker</title>
+    <meta name="description" content="Privacy Policy for YouTube Playlist Progress Tracker extension.">
+
+    <!-- Design System -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/webp" href="assets/icons/logo.webp">
+</head>
+
+<body>
+
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <a href="index.html" class="logo" style="text-decoration: none; color: white;">
+                <img src="assets/icons/logo.webp" alt="Logo" width="32" height="32">
+                <span>YouTube Playlist Progress Tracker</span>
+            </a>
+            <a href="https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl"
+                target="_blank" class="nav-btn">Get Extension</a>
+        </div>
+    </nav>
+
+    <div class="container hero"
+        style="min-height: 40vh; padding-top: 150px; flex-direction: column; text-align: center; gap: 40px; justify-content: start;">
+        <h1 class="hero-title">Privacy <span class="text-gradient">Policy</span></h1>
+        <p class="hero-subtitle" style="max-width: 600px; margin: 0 auto;">
+            Your privacy is our priority.
+        </p>
+    </div>
+
+    <div class="container" style="padding-bottom: 100px;">
+        <div class="card"
+            style="opacity: 1; transform: none; width: 100%; max-width: 800px; margin: 0 auto; text-align: left;">
+
+            <div class="privacy-section">
+                <div class="section-header" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div class="icon-box" style="color: var(--accent-blue);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg>
+                    </div>
+                    <h3 style="margin: 0;">Data Collection & Storage</h3>
+                </div>
+                <p>We believe in privacy by default. <strong>YouTube Playlist Progress Tracker</strong> does not
+                    collect, sell, or transmit any personal data to external servers.</p>
+                <ul style="list-style: none; padding: 0; margin-top: 16px; display: grid; gap: 12px;">
+                    <li style="display: flex; gap: 10px; align-items: start; color: var(--text-secondary);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--accent-green)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <span><strong>Local Storage:</strong> All your progress data (video IDs, timestamps, completion
+                            status) is stored entirely on your device using `chrome.storage.local`.</span>
+                    </li>
+                    <li style="display: flex; gap: 10px; align-items: start; color: var(--text-secondary);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="var(--accent-green)" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                        <span><strong>Sync Storage:</strong> If enabled, we use Chrome's built-in Sync capabilities
+                            (`chrome.storage.sync`) to synchronize settings across your signed-in browsers. This data
+                            travels through Google's encrypted sync servers and is not accessible to us.</span>
+                    </li>
+                </ul>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
+
+            <div class="privacy-section">
+                <div class="section-header" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div class="icon-box" style="color: var(--accent-orange);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            <circle cx="12" cy="11" r="3" />
+                        </svg>
+                    </div>
+                    <h3 style="margin: 0;">Permissions Explained</h3>
+                </div>
+                <p>We only request permissions strictly necessary for the extension functionality:</p>
+                <div class="grid-table" style="display: grid; gap: 16px; margin-top: 20px;">
+                    <div class="perm-item"
+                        style="background: rgba(255,255,255,0.03); padding: 16px; border-radius: 8px;">
+                        <code style="color: var(--accent-blue); font-size: 0.9em;">storage</code>
+                        <p style="margin: 8px 0 0; font-size: 0.9em; color: var(--text-secondary);">Required to save
+                            your playlist progress and settings locally.</p>
+                    </div>
+                    <div class="perm-item"
+                        style="background: rgba(255,255,255,0.03); padding: 16px; border-radius: 8px;">
+                        <code style="color: var(--accent-blue); font-size: 0.9em;">scripting</code> & <code
+                            style="color: var(--accent-blue); font-size: 0.9em;">activeTab</code>
+                        <p style="margin: 8px 0 0; font-size: 0.9em; color: var(--text-secondary);">Used to read video
+                            titles, durations, and chapters from the YouTube page you are currently visiting.</p>
+                    </div>
+                    <div class="perm-item"
+                        style="background: rgba(255,255,255,0.03); padding: 16px; border-radius: 8px;">
+                        <code style="color: var(--accent-blue); font-size: 0.9em;">host_permissions</code>
+                        <p style="margin: 8px 0 0; font-size: 0.9em; color: var(--text-secondary);">Limited strictly to
+                            <code>*://*.youtube.com/*</code> to detect when you are watching a video.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.1); margin: 30px 0;">
+
+            <div class="privacy-section">
+                <div class="section-header" style="display: flex; align-items: center; gap: 12px; margin-bottom: 16px;">
+                    <div class="icon-box" style="color: var(--accent-red);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                        </svg>
+                    </div>
+                    <h3 style="margin: 0;">No Tracking</h3>
+                </div>
+                <p>We do NOT track your browsing history outside of YouTube. We do NOT use Google Analytics or any
+                    third-party telemetry services. Your usage data never leaves your browser.</p>
+            </div>
+
+            <div class="contact-section"
+                style="margin-top: 40px; text-align: center; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.1);">
+                <p style="font-size: 0.9em; color: var(--text-secondary);">Questions?</p>
+                <a href="mailto:privacy@example.com"
+                    style="color: var(--accent-blue); text-decoration: none; font-weight: 500;">privacy@example.com</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span>YT Progress</span>
+                <p>The learning tracker.</p>
+            </div>
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="privacy.html" style="color: white;">Privacy</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube Playlist Progress Tracker</title>
+    <meta name="description"
+        content="Automatically track video playlist progress, mark skipped chapters, and celebrate milestones on any YouTube playlist.">
+
+    <!-- Design System -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/webp" href="assets/icons/logo.webp">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="YouTube Playlist Progress Tracker">
+    <meta property="og:description"
+        content="The ultimate dashboard for your YouTube learning. Manage courses, track milestones, and visualize your growth.">
+    <meta property="og:image" content="assets/screenshots/welcome.webp">
+    <meta property="og:url" content="https://rishabhrai280.github.io/youtube-progress-extension/">
+</head>
+
+<body>
+
+    <div class="blob-container">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav">
+        <div class="nav-content">
+            <div class="logo">
+                <img src="assets/icons/logo.webp" alt="Logo" width="32" height="32">
+                <span>YouTube Playlist Progress Tracker</span>
+            </div>
+            <a href="https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl"
+                target="_blank" class="nav-btn">Get Extension</a>
+        </div>
+    </nav>
+
+    <div class="container hero">
+        <div class="hero-content">
+            <div class="version-badge">v1.0 is live</div>
+
+            <h1 class="hero-title">
+                Master Your <br>
+                <span class="text-gradient">Learning Journey.</span>
+            </h1>
+
+            <p class="hero-subtitle">
+                The missing progress bar for YouTube playlists. Visualize completion, track chapters, and celebrate
+                every milestone.
+            </p>
+
+            <div class="hero-actions">
+                <a href="https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl"
+                    target="_blank" class="btn-primary">
+                    <img src="assets/icons/logo.webp" width="24" height="24" alt="Icon">
+                    Add to Chrome
+                </a>
+                <a href="#how-it-works" class="btn-secondary">How it works</a>
+            </div>
+        </div>
+
+        <div class="hero-visual-wrapper">
+            <div class="hero-visual" data-tilt>
+                <div class="browser-mockup">
+                    <div class="browser-header">
+                        <div class="dots">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                    </div>
+                    <img src="assets/screenshots/welcome.webp" alt="Dashboard Screenshot"
+                        style="width: 100%; display: block;">
+                </div>
+
+                <!-- Floating Widgets (Parallax) -->
+                <div class="floating-widget widget-1" data-speed="2">
+                    <img src="assets/icons/logo.webp" width="40" alt="Icon">
+                    <span>Tracking Active</span>
+                </div>
+
+                <div class="floating-widget widget-2" data-speed="3">
+                    <span>92% Complete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infinite Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            <span>Privacy First</span> • <span>No Login Required</span> • <span>Works on Any Playlist</span> •
+            <span>Chapter Tracking</span> • <span>Milestone Celebrations</span> • <span>Export Data</span> •
+            <span>Privacy First</span> • <span>No Login Required</span> • <span>Works on Any Playlist</span> •
+            <span>Chapter Tracking</span> • <span>Milestone Celebrations</span> • <span>Export Data</span>
+        </div>
+    </div>
+
+    <!-- Features -->
+    <div class="container features" id="how-it-works">
+        <h2 class="section-title">Everything you need to <span class="text-gradient">finish that course.</span></h2>
+
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
+            <!-- Feature 1 -->
+            <div class="card scroll-reveal">
+                <div class="card-icon-wrapper">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path>
+                            <path d="M22 12A10 10 0 0 0 12 2v10z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Visual Tracking</h3>
+                <p>See exactly how much of a playlist you've completed with circular percentage rings and progress bars.
+                </p>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="card scroll-reveal" style="transition-delay: 0.1s;">
+                <div class="card-icon-wrapper">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Smart Resume</h3>
+                <p>Jump back to the next unwatched video with a single click. No more scrolling to find your spot.</p>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="card scroll-reveal" style="transition-delay: 0.2s;">
+                <div class="card-icon-wrapper">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="20 6 9 17 4 12"></polyline>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Auto-Completion</h3>
+                <p>Reaching 90% automatically marks the video as watched, keeping your progress up to date effortlessly.
+                </p>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="card scroll-reveal" style="transition-delay: 0.3s;">
+                <div class="card-icon-wrapper">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M3 3h18v18H3zM21 9H3M21 15H3M12 3v18" />
+                        </svg>
+                    </div>
+                </div>
+                <h3>Skipped Chapters</h3>
+                <p>Exclude intros or irrelevant videos. We recount the stats so your localized progress remains
+                    accurate.</p>
+            </div>
+
+            <!-- Feature 5 -->
+            <div class="card scroll-reveal" style="transition-delay: 0.4s;">
+                <div class="card-icon-wrapper">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path>
+                            <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path>
+                            <path d="M4 22h16"></path>
+                            <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path>
+                            <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path>
+                            <path d="M18 2H6v7a6 6 0 0 0 12 0V2z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Milestone Celebrations</h3>
+                <p>Experience fireworks and confetti when you hit major progress milestones (25%, 50%, 100%).</p>
+            </div>
+
+            <!-- Feature 6 -->
+            <div class="card scroll-reveal" style="transition-delay: 0.5s;">
+                <div class="card-icon-wrapper">
+                    <div class="card-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <h3>Manage Data</h3>
+                <p>Customize playlist names, thumbnails, or delete tracking data directly from the extension popup.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Alternating Sections -->
+    <div class="section-alt">
+        <div class="container split-layout">
+            <div class="split-text scroll-reveal-left">
+                <h2>Visualize Your Growth</h2>
+                <p>The dashboard gives you a bird's-eye view of all your active playlists. See what you've started,
+                    what's almost done, and what you've neglected.</p>
+            </div>
+            <div class="split-image scroll-reveal-right">
+                <div class="browser-mockup glow-red">
+                    <img src="assets/screenshots/welcome.webp" alt="Dashboard" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-alt">
+        <div class="container split-layout reverse">
+            <div class="split-text scroll-reveal-right">
+                <h2>Control at your Fingertips</h2>
+                <p>Manage your progress without leaving the page. Our lightweight popup lets you toggle settings, view
+                    stats, and clean up data instantly.</p>
+            </div>
+            <div class="split-image scroll-reveal-left">
+                <div class="mobile-mockup glow-orange">
+                    <img src="assets/screenshots/popup.webp" alt="Extension Popup interface"
+                        style="width: 100%; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-alt">
+        <div class="container split-layout">
+            <div class="split-text scroll-reveal-left">
+                <h2>Celebrate Progress</h2>
+                <p>Stay motivated with visual rewards. Get confetti and trophies whenever you reach key milestones in
+                    your learning journey.</p>
+            </div>
+            <div class="split-image scroll-reveal-right">
+                <div class="browser-mockup glow-red">
+                    <img src="assets/screenshots/completion.webp" alt="Milestone Celebration"
+                        style="width: 100%; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-alt">
+        <div class="container split-layout reverse">
+            <div class="split-text scroll-reveal-right">
+                <h2>Track Every Chapter</h2>
+                <p>Long tutorials are hard. We break them down by chapters. As you watch, we automatically check them
+                    off, so you always know where you left off.</p>
+            </div>
+            <div class="split-image scroll-reveal-left">
+                <div class="browser-mockup glow-orange">
+                    <img src="assets/screenshots/inject.webp" alt="Injection" style="width: 100%; display: block;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="container faq-section">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">Does it work on private playlists? <span class="toggle">+</span></div>
+                <div class="faq-answer">Yes! Since the extension runs locally on your browser, it can read any playlist
+                    you have access to, including private and unlisted ones.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Where is my data stored? <span class="toggle">+</span></div>
+                <div class="faq-answer">100% on your device. We use Chrome's local storage sync. We do not have any
+                    database of your viewing history.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Is it free? <span class="toggle">+</span></div>
+                <div class="faq-answer">Yes, the core features are completely free.</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <span>YT Progress</span>
+                <p>The learning tracker.</p>
+            </div>
+            <div class="footer-links">
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
