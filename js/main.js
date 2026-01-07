@@ -79,4 +79,35 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // --- Lightbox / Zoom ---
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.lightbox-close');
+
+    if (lightbox && lightboxImg && closeBtn) {
+        // Open Lightbox
+        document.querySelectorAll('.zoomable').forEach(img => {
+            img.addEventListener('click', () => {
+                lightboxImg.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+
+        // Close Lightbox
+        const closeLightbox = () => lightbox.classList.remove('active');
+        
+        closeBtn.addEventListener('click', closeLightbox);
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) closeLightbox();
+        });
+
+        // ESC key to close
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+                closeLightbox();
+            }
+        });
+    }
+
 });

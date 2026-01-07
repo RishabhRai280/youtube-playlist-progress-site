@@ -186,6 +186,7 @@ h3 {
 .text-gradient {
     background: linear-gradient(to right, var(--accent-red), var(--accent-orange));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -421,6 +422,25 @@ h3 {
     color: var(--text-sub);
 }
 
+/* Support Page Specifics */
+.troubleshoot-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+}
+
+.troubleshoot-item p {
+    line-height: 1.6;
+}
+
+code {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
+    color: var(--accent-orange);
+}
+
 /* Split Sections */
 .section-alt {
     padding: 100px 0;
@@ -551,14 +571,42 @@ footer {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .glass-nav {
+        width: 95%;
+        padding: 10px 16px;
+        top: 10px;
+    }
+
+    .nav-content {
+        gap: 10px;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    .logo::after {
+        content: "YT Progress";
+        display: block;
+    }
+
     .hero {
         flex-direction: column;
         text-align: center;
-        padding-top: 120px;
+        padding-top: 140px;
+        /* Increased padding to avoid header overlap */
+        gap: 40px;
     }
 
     .hero-actions {
         justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
     }
 
     .browser-mockup {
@@ -572,6 +620,25 @@ footer {
     }
 
     .hero-title {
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .nav-btn {
+        font-size: 0.8rem;
+        padding: 8px 12px;
     }
 }

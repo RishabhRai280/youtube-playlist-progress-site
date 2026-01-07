@@ -32,70 +32,100 @@
                 <img src="assets/icons/logo.webp" alt="Logo" width="32" height="32">
                 <span>YouTube Playlist Progress Tracker</span>
             </a>
-            <a href="https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl"
-                target="_blank" class="nav-btn">Get Extension</a>
+            <a href="https://chromewebstore.google.com/detail/jcmmbbgoebjleajoaibhfjjcfgdeliki" target="_blank"
+                class="nav-btn">Get Extension</a>
         </div>
     </nav>
 
     <div class="container hero"
-        style="min-height: 60vh; padding-top: 150px; flex-direction: column; text-align: center; gap: 40px; justify-content: start;">
-        <h1 class="hero-title">Need <span class="text-gradient">Help?</span></h1>
+        style="min-height: 50vh; padding-top: 140px; flex-direction: column; text-align: center; gap: 32px; justify-content: start;">
+        <span class="version-badge">Support Center</span>
+        <h1 class="hero-title">How can we <span class="text-gradient">help?</span></h1>
         <p class="hero-subtitle" style="max-width: 600px; margin: 0 auto;">
-            We're here to help you get the most out of your learning journey.
+            Troubleshooting, guides, and direct support for your learning journey.
         </p>
     </div>
 
-    <div class="container features" style="padding-top: 0;">
-        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));">
-            <!-- Contact Card -->
-            <div class="card" style="opacity: 1; transform: none;">
+    <div class="container support-grid-container" style="padding-bottom: 100px;">
+        <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+
+            <!-- Direct Support Card -->
+            <div class="card support-card">
                 <div class="card-icon-wrapper">
-                    <div class="card-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                </div>
+                <h3>Contact Us Directly</h3>
+                <p>Found a bug or have a feature request? Send us an email and we'll get back to you.</p>
+                <a href="mailto:rairishabh281@gmail.com" class="btn-primary"
+                    style="margin-top: 24px; width: 100%; text-align: center;">rairishabh281@gmail.com</a>
+            </div>
+
+            <!-- Quick Troubleshooting -->
+            <div class="card support-card" style="grid-column: span 1 / -1; min-height: fit-content;">
+                <div class="card-header" style="display: flex; align-items: center; gap: 16px; margin-bottom: 24px;">
+                    <div class="card-icon-wrapper"
+                        style="margin-bottom: 0; width: 48px; height: 48px; font-size: 20px;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                            <polyline points="22,6 12,13 2,6" />
+                            <path
+                                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
                         </svg>
                     </div>
+                    <h3 style="margin: 0;">Quick Troubleshooting</h3>
                 </div>
-                <h3>Contact Support</h3>
-                <p>Have a question or found a bug? We're here to help.</p>
-                <a href="mailto:rairishabh281@gmail.com" class="btn-primary"
-                    style="margin-top: 20px; width: 100%; display: inline-block; box-sizing: border-box; text-align: Center;">Email
-                    Us</a>
+
+                <div class="troubleshoot-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px;">
+                    <div class="troubleshoot-item">
+                        <h4 style="color: white; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--accent-orange);">01.</span> Extension not showing?
+                        </h4>
+                        <p style="font-size: 0.95rem; color: var(--text-sub);">
+                            Click the puzzle piece (🧩) in Chrome's toolbar and pin <strong>YouTube Playlist
+                                Progress</strong>. If it's still missing, try re-enabling it in
+                            <code>chrome://extensions</code>.
+                        </p>
+                    </div>
+
+                    <div class="troubleshoot-item">
+                        <h4 style="color: white; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--accent-orange);">02.</span> Stats not updating?
+                        </h4>
+                        <p style="font-size: 0.95rem; color: var(--text-sub);">
+                            This usually happens if the page connection is lost. Simply <strong
+                                style="color:white;">refresh the YouTube page</strong>. Test with our <a
+                                href="https://youtube.com/playlist?list=PLJXHTiB44OYunUz8R1i_S0th-OmnNZsKL&si=eY1_tpCklZD4CWl5"
+                                target="_blank" style="color:var(--accent-orange); text-decoration:none;">Official Demo
+                                Playlist</a> to verify.
+                        </p>
+                    </div>
+
+                    <div class="troubleshoot-item">
+                        <h4 style="color: white; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--accent-orange);">03.</span> Sync issues?
+                        </h4>
+                        <p style="font-size: 0.95rem; color: var(--text-sub);">
+                            Go to Extension Settings > Danger Zone > <strong>Clear All Data</strong> to perform a hard
+                            reset if your data seems corrupted. Warning: this deletes all progress.
+                        </p>
+                    </div>
+
+                    <div class="troubleshoot-item">
+                        <h4 style="color: white; margin-bottom: 8px; display: flex; align-items: center; gap: 8px;">
+                            <span style="color: var(--accent-orange);">04.</span> Video Access
+                        </h4>
+                        <p style="font-size: 0.95rem; color: var(--text-sub);">
+                            The extension only reads data from the active tab. It does not track your history outside of
+                            the playlists you actively view.
+                        </p>
+                    </div>
+                </div>
             </div>
 
-            <!-- Troubleshooting -->
-            <div class="card"
-                style="opacity: 1; transform: none; text-align: left; grid-column: span 1 / -1; max-width: 100%;">
-                <h3 style="margin-bottom: 20px; display: flex; align-items: center; gap: 10px;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                        stroke="var(--accent-orange)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" />
-                    </svg>
-                    Quick Troubleshooting
-                </h3>
-
-                <div class="troubleshoot-item" style="margin-bottom: 20px;">
-                    <h4 style="color: white; margin-bottom: 8px;">Extension not appearing?</h4>
-                    <p style="font-size: 0.95em;">1. Click the puzzle icon (🧩) in Chrome's toolbar.<br>2. Find "YouTube
-                        Playlist Progress" and click the pin icon.<br>3. Refresh your YouTube page.</p>
-                </div>
-
-                <div class="troubleshoot-item" style="margin-bottom: 20px;">
-                    <h4 style="color: white; margin-bottom: 8px;">Progress not tracking?</h4>
-                    <p style="font-size: 0.95em;">Ensure you are on a valid YouTube Playlist page (URL contains
-                        `&list=...`). The extension works best on the full playlist view or within the video player with
-                        the playlist sidebar open.</p>
-                </div>
-
-                <div class="troubleshoot-item">
-                    <h4 style="color: white; margin-bottom: 8px;">Resetting Data</h4>
-                    <p style="font-size: 0.95em;">Open the extension popup > Click "Settings" (gear icon) > Scroll down
-                        to "Danger Zone" > Click "Clear All Data" to perform a hard reset.</p>
-                </div>
-            </div>
         </div>
     </div>
 
@@ -104,14 +134,24 @@
         <h2 class="section-title">Common Questions</h2>
         <div class="faq-container">
             <div class="faq-item">
+                <div class="faq-question">How does tracking work? <span class="toggle">+</span></div>
+                <div class="faq-answer">The extension automatically detects when you finish a video on a playlist page.
+                    It stores this progress locally so you can resume anytime, even if YouTube forgets.</div>
+            </div>
+            <div class="faq-item">
                 <div class="faq-question">Does it work on private playlists? <span class="toggle">+</span></div>
                 <div class="faq-answer">Yes! Since the extension runs locally on your browser, it can read any playlist
                     you have access to, including private and unlisted ones.</div>
             </div>
             <div class="faq-item">
                 <div class="faq-question">Where is my data stored? <span class="toggle">+</span></div>
-                <div class="faq-answer">100% on your device. We use Chrome's local storage sync. We do not have any
-                    database of your viewing history.</div>
+                <div class="faq-answer">100% on your device. We use Chrome's local storage. We do not track you or send
+                    data to any server.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">Can I sync across devices? <span class="toggle">+</span></div>
+                <div class="faq-answer">Currently, data is stored per-device. Account syncing via Chrome Sync is a
+                    planned feature coming in version 2.0.</div>
             </div>
         </div>
     </div>
@@ -132,6 +172,7 @@
 
     <!-- Simple script for FAQ toggle (inline for simplicity or reuse main.js if it handles generic classes) -->
     <script>
+        // FAQ Toggle
         document.querySelectorAll('.faq-question').forEach(question => {
             question.addEventListener('click', () => {
                 const answer = question.nextElementSibling;
@@ -139,6 +180,17 @@
 
                 answer.classList.toggle('open');
                 toggle.classList.toggle('rotate');
+            });
+        });
+
+        // Simple Reveal Animation for Support Cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '1';
+                    card.style.transform = 'translateY(0)';
+                }, 100 * (index + 1));
             });
         });
     </script>

@@ -1,6 +1,6 @@
 # YouTube Playlist Progress Tracker - Website
 
-This repository hosts the official website for the [YouTube Playlist Progress Tracker](https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl) extension.
+This repository hosts the official website for the [YouTube Playlist Progress Tracker](https://chromewebstore.google.com/detail/jcmmbbgoebjleajoaibhfjjcfgdeliki) extension.
 
 ## Overview
 The website provides:

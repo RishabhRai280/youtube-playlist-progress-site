@@ -15,6 +15,8 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@700;800&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/browser_mockup.css">
+    <link rel="stylesheet" href="css/lightbox.css">
     <link rel="icon" type="image/webp" href="assets/icons/logo.webp">
 
     <!-- Open Graph -->
@@ -23,6 +25,7 @@
         content="The ultimate dashboard for your YouTube learning. Manage courses, track milestones, and visualize your growth.">
     <meta property="og:image" content="assets/screenshots/welcome.webp">
     <meta property="og:url" content="https://rishabhrai280.github.io/youtube-progress-extension/">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
 </head>
 
 <body>
@@ -40,14 +43,14 @@
                 <img src="assets/icons/logo.webp" alt="Logo" width="32" height="32">
                 <span>YouTube Playlist Progress Tracker</span>
             </div>
-            <a href="https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl"
-                target="_blank" class="nav-btn">Get Extension</a>
+            <a href="https://chromewebstore.google.com/detail/jcmmbbgoebjleajoaibhfjjcfgdeliki" target="_blank"
+                class="nav-btn">Get Extension</a>
         </div>
     </nav>
 
     <div class="container hero">
         <div class="hero-content">
-            <div class="version-badge">v1.0 is live</div>
+            <div class="version-badge">v1.1.0 is live</div>
 
             <h1 class="hero-title">
                 Master Your <br>
@@ -60,12 +63,13 @@
             </p>
 
             <div class="hero-actions">
-                <a href="https://chromewebstore.google.com/detail/youtube-playlist-progres/hchbgmpjleidbkbffpoocgpcalpifcnl"
-                    target="_blank" class="btn-primary">
+                <a href="https://chromewebstore.google.com/detail/jcmmbbgoebjleajoaibhfjjcfgdeliki" target="_blank"
+                    class="btn-primary">
                     <img src="assets/icons/logo.webp" width="24" height="24" alt="Icon">
                     Add to Chrome
                 </a>
-                <a href="#how-it-works" class="btn-secondary">How it works</a>
+                <a href="https://youtube.com/playlist?list=PLJXHTiB44OYunUz8R1i_S0th-OmnNZsKL&si=eY1_tpCklZD4CWl5"
+                    target="_blank" class="btn-secondary">Demo Video Playlist</a>
             </div>
         </div>
 
@@ -79,19 +83,11 @@
                             <div class="dot green"></div>
                         </div>
                     </div>
-                    <img src="assets/screenshots/welcome.webp" alt="Dashboard Screenshot"
-                        style="width: 100%; display: block;">
+                    <img src="assets/screenshots/hero_new.webp" alt="Dashboard Live Preview" class="zoomable"
+                        style="width: 100%; display: block; border-radius: 0 0 8px 8px;">
                 </div>
 
-                <!-- Floating Widgets (Parallax) -->
-                <div class="floating-widget widget-1" data-speed="2">
-                    <img src="assets/icons/logo.webp" width="40" alt="Icon">
-                    <span>Tracking Active</span>
-                </div>
-
-                <div class="floating-widget widget-2" data-speed="3">
-                    <span>92% Complete</span>
-                </div>
+                <!-- Floating Widgets Removed for Clarity -->
             </div>
         </div>
     </div>
@@ -211,13 +207,22 @@
     <div class="section-alt">
         <div class="container split-layout">
             <div class="split-text scroll-reveal-left">
-                <h2>Visualize Your Growth</h2>
-                <p>The dashboard gives you a bird's-eye view of all your active playlists. See what you've started,
-                    what's almost done, and what you've neglected.</p>
+                <h2>Your Journey, Visualized.</h2>
+                <p>Stop guessing. Start knowing. The dashboard renders your entire learning path in one stunning view.
+                    See what you've conquered and what's next.</p>
             </div>
             <div class="split-image scroll-reveal-right">
-                <div class="browser-mockup glow-red">
-                    <img src="assets/screenshots/welcome.webp" alt="Dashboard" style="width: 100%; display: block;">
+                <div class="browser-mockup"
+                    style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <div class="browser-header">
+                        <div class="dots">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                    </div>
+                    <img src="assets/screenshots/hero_new.webp" alt="Dashboard Screenshot" class="zoomable"
+                        style="width: 100%; display: block;">
                 </div>
             </div>
         </div>
@@ -226,13 +231,21 @@
     <div class="section-alt">
         <div class="container split-layout reverse">
             <div class="split-text scroll-reveal-right">
-                <h2>Control at your Fingertips</h2>
-                <p>Manage your progress without leaving the page. Our lightweight popup lets you toggle settings, view
-                    stats, and clean up data instantly.</p>
+                <h2>Total Control. Zero Clutter.</h2>
+                <p>Hide the noise. Our lightweight HUD lets you toggle visibility, banish irrelevant videos, and keep
+                    your workspace pristine.</p>
             </div>
             <div class="split-image scroll-reveal-left">
-                <div class="mobile-mockup glow-orange">
-                    <img src="assets/screenshots/popup.webp" alt="Extension Popup interface"
+                <div class="browser-mockup"
+                    style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <div class="browser-header">
+                        <div class="dots">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                    </div>
+                    <img src="assets/screenshots/feature_hide.webp" alt="Hide Video Demo" class="zoomable"
                         style="width: 100%; display: block;">
                 </div>
             </div>
@@ -248,7 +261,14 @@
             </div>
             <div class="split-image scroll-reveal-right">
                 <div class="browser-mockup glow-red">
-                    <img src="assets/screenshots/completion.webp" alt="Milestone Celebration"
+                    <div class="browser-header">
+                        <div class="dots">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                    </div>
+                    <img src="assets/screenshots/feature_confetti.webp" alt="Milestone Celebration" class="zoomable"
                         style="width: 100%; display: block;">
                 </div>
             </div>
@@ -258,13 +278,22 @@
     <div class="section-alt">
         <div class="container split-layout reverse">
             <div class="split-text scroll-reveal-right">
-                <h2>Track Every Chapter</h2>
-                <p>Long tutorials are hard. We break them down by chapters. As you watch, we automatically check them
-                    off, so you always know where you left off.</p>
+                <h2>Conquer Every Chapter.</h2>
+                <p>Don't just watch videos—finish them. We automatically track sub-chapters and milestones, so you never
+                    lose your place in a 10-hour tutorial again.</p>
             </div>
             <div class="split-image scroll-reveal-left">
-                <div class="browser-mockup glow-orange">
-                    <img src="assets/screenshots/inject.webp" alt="Injection" style="width: 100%; display: block;">
+                <div class="browser-mockup"
+                    style="border-radius: 12px; overflow: hidden; box-shadow: 0 20px 40px rgba(0,0,0,0.3);">
+                    <div class="browser-header">
+                        <div class="dots">
+                            <div class="dot red"></div>
+                            <div class="dot yellow"></div>
+                            <div class="dot green"></div>
+                        </div>
+                    </div>
+                    <img src="assets/screenshots/feature_skip.webp" alt="Skip Chapter Demo" class="zoomable"
+                        style="width: 100%; display: block;">
                 </div>
             </div>
         </div>
@@ -289,6 +318,11 @@
                 <div class="faq-answer">Yes, the core features are completely free.</div>
             </div>
         </div>
+    </div>
+
+    <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img src="" alt="Zoomed View" class="lightbox-content" id="lightbox-img">
     </div>
 
     <!-- Footer -->
