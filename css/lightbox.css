@@ -63,5 +63,6 @@
 }
 
 .zoomable:hover {
-    transform: scale(1.02);
+    /* Transform handled by parent container now */
+    border-color: rgba(255, 255, 255, 0.2);
 }

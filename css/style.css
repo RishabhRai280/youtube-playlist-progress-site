@@ -256,6 +256,14 @@ h3 {
     overflow: hidden;
     width: 600px;
     /* Fixed width for consistency */
+    transition: transform 0.4s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.4s ease;
+}
+
+.browser-mockup:hover {
+    transform: scale(1.02);
+    box-shadow: 0 60px 120px -20px rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    position: relative;
 }
 
 .mobile-mockup {
